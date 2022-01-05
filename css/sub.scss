@@ -1,0 +1,75 @@
+@import 'common';
+
+.about_v {
+    position: relative; width: 100%; height: 100vh; 
+    &::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../img/subBG-about3.jpg'); background-size: cover; display: block; z-index: -1;}
+    .tit {
+        width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;
+        p {color: #fff; font-size: 0.75em; margin-bottom: 1em;}
+        h2 {color: #fff; font-weight: 700; font-size: 3.3em; text-align: center;}
+    }
+    .scr {
+        position: absolute; width: 1.5em; left: 50%; bottom: 3.5vh; transform: translateX(-50%);
+        span {
+            position: absolute; width: 1.5em; height: 2.5em; border-radius: 0.75em; border: 1px solid #fff;
+            &::before {content: ''; display: block; background: #fff; width: .5em; height: .5em; border-radius: 50%; left: calc(50% - 0.25em); top: 5px;
+            animation: move 1s infinite linear; position: absolute;} 
+        } 
+        p {color: #fff; font-size: .75em; text-align: center; padding-top: 3.5em; margin-left: -0.75em;}          
+    }
+    @keyframes move {
+        50% {top: 20px;}
+        100% {top: 5px;}
+    }
+}
+
+.about {
+    padding: 3em 1em;
+    .tit {
+        h2 {font-size: 2.75em; color: #443227;}
+        h3 {font-size: 2em; color: #443227;}
+    }
+    p {font-size: 1em; line-height: 1.75; margin-top: 1.5em;}
+    p img {width: 100%;}
+}
+
+.vision {
+    padding: 3em 1em;
+    .tit {
+        h3 {font-size: 2em; color: #443227;}
+    }
+    .box {
+        padding: 3em; background: #f4f4f4; text-align: center; margin-top: 2.5em;
+        .cont {
+            h4 {font-size: 1.5em; color: #443227;}
+            p {font-size: 1em; color: #353535; margin: 1.5em 0;}
+        }
+        .icon {
+            width: 15em; height: 15em; border-radius: 50%; background: #fff; line-height: 15em;
+        }
+        .icon1 {
+            width: 15em; margin-top: 1.5em;
+            img {width: 100%;}
+        }
+    }
+}
+
+.subsidiary {
+    padding: 3em 1em; background: #f5f8f7;
+    .tit {
+        margin-bottom: 2em;
+        h3 {font-size: 2em; color: #443227;}
+    }
+    .company {
+        width: 100%; background: #fff; box-shadow: 0 25px 70px rgba(0, 0, 0, .1); padding: 4.5% 5.5%; margin-bottom: 1.5em;
+        h4 {
+            padding: 0 2em 1em 0;
+            img {width: 100%;}
+        }
+        p {color: #666; font-size: 1em; line-height: 1.6;}
+        a {
+            width: 10rem; height: 2.5rem; position: relative; padding-right: 1em; border: 1px solid #ccc; display: block; margin: 1.5rem 0 0.5rem 0; font-size: 0.85em; line-height: 2.7; text-align: center; color: #333; font-weight: 700;
+            &::after {content: ''; position: absolute; border: 7px solid transparent; border-left: 7px solid #333; top: calc(50% - 0.5em); right: 0.5em;}
+        }
+    }
+}
