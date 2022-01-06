@@ -70,11 +70,11 @@ header .hd h1 a img {
 }
 
 header .hd button {
-  width: 42px;
+  width: 2.5em;
   background: none;
-  text-align: right;
+  text-align: left;
   border: 0;
-  line-height: 0.8em;
+  line-height: 0.6em;
   cursor: pointer;
 }
 
@@ -83,6 +83,10 @@ header .hd button span {
   height: 2px;
   background: #fff;
   display: inline-block;
+}
+
+header .hd button span:nth-of-type(2) {
+  width: 75%;
 }
 
 header .s_mn {
@@ -112,8 +116,9 @@ header .s_mn .sub ul li a {
   display: block;
   width: 100%;
   color: #000;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.5;
+  font-weight: 700;
 }
 
 header .fl {

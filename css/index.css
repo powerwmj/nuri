@@ -253,6 +253,7 @@ footer .family_w .all_fam ul li a {
   height: 100%;
   font-size: .9em;
   padding-left: 1.5em;
+  cursor: pointer;
 }
 
 main .main_v {

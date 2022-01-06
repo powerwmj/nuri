@@ -70,11 +70,11 @@ header .hd h1 a img {
 }
 
 header .hd button {
-  width: 42px;
+  width: 2.5em;
   background: none;
-  text-align: right;
+  text-align: left;
   border: 0;
-  line-height: 0.8em;
+  line-height: 0.6em;
   cursor: pointer;
 }
 
@@ -83,6 +83,10 @@ header .hd button span {
   height: 2px;
   background: #fff;
   display: inline-block;
+}
+
+header .hd button span:nth-of-type(2) {
+  width: 75%;
 }
 
 header .s_mn {
@@ -112,8 +116,9 @@ header .s_mn .sub ul li a {
   display: block;
   width: 100%;
   color: #000;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.5;
+  font-weight: 700;
 }
 
 header .fl {
@@ -269,7 +274,7 @@ footer .family_w .all_fam ul li a {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/subBG-about3.jpg");
+  background: url("../img/subBG-about3.jpg") center;
   background-size: cover;
   display: block;
   z-index: -1;
@@ -490,5 +495,240 @@ footer .family_w .all_fam ul li a {
   border-left: 7px solid #333;
   top: calc(50% - 0.5em);
   right: 0.5em;
+}
+
+.business_w {
+  width: 100%;
+  height: 100vh;
+  padding: 3em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.business_w .img {
+  width: 100%;
+}
+
+.business_w .img img {
+  width: 100%;
+}
+
+.business_w .tit {
+  color: #fff;
+  margin-top: 1em;
+}
+
+.business_w .tit p {
+  font-size: 0.75em;
+  letter-spacing: 10;
+}
+
+.business_w .tit h2 {
+  font-size: 3em;
+  margin: 0.15em 0 0 0;
+}
+
+.business_w .txt {
+  color: #fff;
+  font-size: 0.85em;
+}
+
+.business_w .txt p {
+  line-height: 1.7;
+  margin: 1em 0 2em 0;
+}
+
+.business_w .txt a {
+  display: inline-block;
+  color: #fff;
+  padding: 0.625em 1em;
+  border: 1px solid #fff;
+  font-weight: 700;
+  margin-right: 1em;
+}
+
+.business_01 {
+  background: url("../img/business01-bg.jpg") center;
+  background-size: cover;
+}
+
+.business_02 {
+  background: url("../img/business02-bg.jpg") center;
+  background-size: cover;
+}
+
+.business_03 {
+  background: url("../img/business03-bg.jpg") center;
+  background-size: cover;
+}
+
+.business_04 {
+  background: url("../img/business04-bg.jpg") center;
+  background-size: cover;
+}
+
+.business_05 {
+  background: url("../img/business05-bg.jpg") center;
+  background-size: cover;
+}
+
+.esg_v {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.esg_v::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/subBG-esg.jpg") center;
+  background-size: cover;
+  display: block;
+  z-index: -1;
+}
+
+.esg_v .tit {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.esg_v .tit p {
+  color: #fff;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+
+.esg_v .tit h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3.3em;
+  text-align: center;
+}
+
+.esg_v .scr {
+  position: absolute;
+  width: 1.5em;
+  left: 50%;
+  bottom: 3.5vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.esg_v .scr span {
+  position: absolute;
+  width: 1.5em;
+  height: 2.5em;
+  border-radius: 0.75em;
+  border: 1px solid #fff;
+}
+
+.esg_v .scr span::before {
+  content: '';
+  display: block;
+  background: #fff;
+  width: .5em;
+  height: .5em;
+  border-radius: 50%;
+  left: calc(50% - 0.25em);
+  top: 5px;
+  -webkit-animation: move 1s infinite linear;
+          animation: move 1s infinite linear;
+  position: absolute;
+}
+
+.esg_v .scr p {
+  color: #fff;
+  font-size: .75em;
+  text-align: center;
+  padding-top: 3.5em;
+  margin-left: -0.75em;
+}
+
+@keyframes move {
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+.esg {
+  padding: 3em 1em;
+}
+
+.esg .tit h2 {
+  font-size: 2em;
+  color: #443227;
+}
+
+.esg .txt p {
+  font-size: 1em;
+  line-height: 1.75;
+  margin-top: 1.5em;
+}
+
+.esg .txt p img {
+  width: 100%;
+}
+
+.esg .txt h3 {
+  font-size: 1.5em;
+  color: #3c9965;
+}
+
+.esg .txt ul {
+  margin-top: 2em;
+}
+
+.esg .txt ul li {
+  font-size: 1em;
+  padding: 0 0 1em 2em;
+  position: relative;
+}
+
+.esg .txt ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: .25em;
+  top: .35em;
+  width: 1em;
+  height: 1.25em;
+  background: url("../img/elmnt-v.svg") center;
+  background-size: 100%;
+}
+
+.ethics {
+  padding: 3em 1em;
+  background: #f5f8f7;
 }
 /*# sourceMappingURL=sub.css.map */
