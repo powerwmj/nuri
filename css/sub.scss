@@ -141,5 +141,25 @@
 }
 
 .ethics {
-    padding: 3em 1em; background: #f5f8f7;
+    padding: 3em 1em; background: #f5f8f7; position: relative;
+    .tit {
+        h2 {font-size: 2em; color: #443227;}
+    }
+    .txt { 
+        p {font-size: 1em; line-height: 1.75; margin: 1.5em 0;}
+        h3 {font-size: 1.5em; color: #3c9965;}
+    }
+    .content-box {
+        width: 100%; padding: 2em; background: #fff; margin-top: 2em;
+        h4 {font-size: 1.5em; color: #111;}
+        .sub_title {font-size: 1.25em; color: #3c9965; font-weight: 700; margin: 1rem 0 0.75rem 0;}
+        p {
+            font-size: 1em;
+            strong {display: block;}
+        }
+    }
+    .more_btn { 
+        position: absolute; display: block; width: calc(100% - 2em); bottom: -0.25em; left: 1em; padding: 7.5em 0 0 0;
+        .open {color: #fff; background: #2c4373; cursor: pointer; padding: 0.75em 0; font-weight: 700; font-size: 1.1em; text-align: center;}
+    }
 }

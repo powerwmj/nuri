@@ -70,11 +70,11 @@ header .hd h1 a img {
 }
 
 header .hd button {
-  width: 42px;
+  width: 2.5em;
   background: none;
-  text-align: right;
+  text-align: left;
   border: 0;
-  line-height: 0.8em;
+  line-height: 0.6em;
   cursor: pointer;
 }
 
@@ -85,13 +85,21 @@ header .hd button span {
   display: inline-block;
 }
 
+header .hd button span:nth-of-type(2) {
+  width: 75%;
+}
+
 header .s_mn {
   width: 100%;
   position: absolute;
   left: 0;
   top: 3.75em;
   z-index: 1;
-  display: none;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header .s_mn .sub {
@@ -112,8 +120,15 @@ header .s_mn .sub ul li a {
   display: block;
   width: 100%;
   color: #000;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.5;
+  font-weight: 700;
+}
+
+header .s_mn.active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 header .fl {
@@ -254,6 +269,10 @@ footer .family_w .all_fam ul li a {
   font-size: .9em;
   padding-left: 1.5em;
   cursor: pointer;
+}
+
+.pt-40 {
+  padding-top: 2.5em;
 }
 
 main .main_v {
