@@ -1,12 +1,18 @@
 @import 'common';
 
+.top {opacity: 1;}
+.top {
+    .tit {
+        h2.active {opacity: 1; transform: translateY(0%);}
+    }
+}
 .about_v {
     position: relative; width: 100%; height: 100vh; 
     &::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../img/subBG-about3.jpg') center; background-size: cover; display: block; z-index: -1;}
     .tit {
         width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;
         p {color: #fff; font-size: 0.75em; margin-bottom: 1em;}
-        h2 {color: #fff; font-weight: 700; font-size: 3.3em; text-align: center;}
+        h2 {color: #fff; font-weight: 700; font-size: 3.3em; text-align: center; opacity: 0; transform: translateY(100%); transition: .5s;}
     }
     .scr {
         position: absolute; width: 1.5em; left: 50%; bottom: 3.5vh; transform: translateX(-50%);
@@ -26,23 +32,23 @@
 .about {
     padding: 3em 1em;
     .tit {
-        h2 {font-size: 2.75em; color: #443227;}
-        h3 {font-size: 2em; color: #443227;}
+        h2 {font-size: 2.75em; color: #443227; transform: translateY(-100%); opacity: 0; transition: .5s;}
+        h3 {font-size: 2em; color: #443227; transform: translateX(-100%); opacity: 0; transition: .5s;}
     }
-    p {font-size: 1em; line-height: 1.75; margin-top: 1.5em;}
+    p {font-size: 1em; line-height: 1.75; margin-top: 1.5em; transform: translateY(100%); opacity: 0; transition: .5s;}
     p img {width: 100%;}
 }
 
 .vision {
     padding: 3em 1em;
     .tit {
-        h3 {font-size: 2em; color: #443227;}
+        h3 {font-size: 2em; color: #443227; transform: translateX(-100%); opacity: 0; transition: .5s;}
     }
     .box {
         padding: 3em; background: #f4f4f4; text-align: center; margin-top: 2.5em;
         .cont {
-            h4 {font-size: 1.5em; color: #443227;}
-            p {font-size: 1em; color: #353535; margin: 1.5em 0;}
+            h4 {font-size: 1.5em; color: #443227; transform: translateY(100%); opacity: 0; transition: .5s;}
+            p {font-size: 1em; color: #353535; margin: 1.5em 0; transform: translateY(100%); opacity: 0; transition: .5s;}
         }
         .icon {
             width: 15em; height: 15em; border-radius: 50%; background: #fff; line-height: 15em; margin: 0 auto;
@@ -58,15 +64,15 @@
     padding: 3em 1em; background: #f5f8f7;
     .tit {
         margin-bottom: 2em;
-        h3 {font-size: 2em; color: #443227;}
+        h3 {font-size: 2em; color: #443227; transform: translateX(-100%); opacity: 0; transition: .5s;}
     }
     .company {
         width: 100%; background: #fff; box-shadow: 0 25px 70px rgba(0, 0, 0, .1); padding: 4.5% 5.5%; margin-bottom: 1.5em;
         h4 {
-            padding: 0 2em 1em 0;
+            padding: 0 2em 1em 0; transform: translateY(100%); opacity: 0; transition: .5s;
             img {width: 100%;}
         }
-        p {color: #666; font-size: 1em; line-height: 1.6;}
+        p {color: #666; font-size: 1em; line-height: 1.6; transform: translateY(100%); opacity: 0; transition: .5s;}
         a {
             width: 10rem; height: 2.5rem; position: relative; padding-right: 1em; border: 1px solid #ccc; display: block; margin: 1.5rem 0 0.5rem 0; font-size: 0.85em; line-height: 2.7; text-align: center; color: #333; font-weight: 700;
             &::after {content: ''; position: absolute; border: 7px solid transparent; border-left: 7px solid #333; top: calc(50% - 0.5em); right: 0.5em;}
@@ -83,11 +89,11 @@
     .tit {
         color: #fff; margin-top: 1em;
         p {font-size: 0.75em; letter-spacing: 10;}
-        h2 {font-size: 3em; margin: 0.15em 0 0 0;}
+        h2 {font-size: 3em; margin: 0.15em 0 0 0; transform: translateY(-100%); opacity: 0; transition: .5s;}
     }
     .txt {
         color: #fff; font-size: 0.85em; 
-        p {line-height: 1.7; margin: 1em 0 2em 0;}
+        p {line-height: 1.7; margin: 1em 0 2em 0; transform: translateY(100%); opacity: 0; transition: .5s;}
         a {display: inline-block; color: #fff; padding: 0.625em 1em; border: 1px solid #fff; font-weight: 700; margin-right: 1em;}
     }
 }
@@ -103,7 +109,7 @@
     .tit {
         width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;
         p {color: #fff; font-size: 0.75em; margin-bottom: 1em;}
-        h2 {color: #fff; font-weight: 700; font-size: 3.3em; text-align: center;}
+        h2 {color: #fff; font-weight: 700; font-size: 3.3em; text-align: center; opacity: 0; transform: translateY(100%); transition: .5s;}
     }
     .scr {
         position: absolute; width: 1.5em; left: 50%; bottom: 3.5vh; transform: translateX(-50%);
@@ -123,17 +129,17 @@
 .esg {
     padding: 3em 1em;
     .tit {
-        h2 {font-size: 2em; color: #443227;}
+        h2 {font-size: 2em; color: #443227; transform: translateY(-100%); opacity: 0; transition: .5s;}
         
     }
     .txt {
-        p {font-size: 1em; line-height: 1.75; margin-top: 1.5em;}
+        p {font-size: 1em; line-height: 1.75; margin-top: 1.5em; transform: translateY(100%); opacity: 0; transition: .5s;}
         p img {width: 100%;}
-        h3 {font-size: 1.5em; color: #3c9965;}
+        h3 {font-size: 1.5em; color: #3c9965; transform: translateX(-100%); opacity: 0; transition: .5s;}
         ul {
             margin-top: 2em;
             li {
-                font-size: 1em; padding: 0 0 1em 2em; position: relative;
+                font-size: 1em; padding: 0 0 1em 2em; position: relative; transform: translateY(100%); opacity: 0; transition: .5s;
                 &::before {content: ''; display: block; position: absolute; left: .25em; top: .35em; width: 1em; height: 1.25em; background: url('../img/elmnt-v.svg') center; background-size: 100%;}
             }
         }

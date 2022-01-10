@@ -305,6 +305,16 @@ footer .family_w .all_fam ul li a {
   padding-top: 2.5em;
 }
 
+.top {
+  opacity: 1;
+}
+
+.top .tit h2.active {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 .about_v {
   position: relative;
   width: 100%;
@@ -353,6 +363,11 @@ footer .family_w .all_fam ul li a {
   font-weight: 700;
   font-size: 3.3em;
   text-align: center;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .about_v .scr {
@@ -419,17 +434,32 @@ footer .family_w .all_fam ul li a {
 .about .tit h2 {
   font-size: 2.75em;
   color: #443227;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .about .tit h3 {
   font-size: 2em;
   color: #443227;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .about p {
   font-size: 1em;
   line-height: 1.75;
   margin-top: 1.5em;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .about p img {
@@ -443,6 +473,11 @@ footer .family_w .all_fam ul li a {
 .vision .tit h3 {
   font-size: 2em;
   color: #443227;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .vision .box {
@@ -455,12 +490,22 @@ footer .family_w .all_fam ul li a {
 .vision .box .cont h4 {
   font-size: 1.5em;
   color: #443227;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .vision .box .cont p {
   font-size: 1em;
   color: #353535;
   margin: 1.5em 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .vision .box .icon {
@@ -493,6 +538,11 @@ footer .family_w .all_fam ul li a {
 .subsidiary .tit h3 {
   font-size: 2em;
   color: #443227;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .subsidiary .company {
@@ -506,6 +556,11 @@ footer .family_w .all_fam ul li a {
 
 .subsidiary .company h4 {
   padding: 0 2em 1em 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .subsidiary .company h4 img {
@@ -516,6 +571,11 @@ footer .family_w .all_fam ul li a {
   color: #666;
   font-size: 1em;
   line-height: 1.6;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .subsidiary .company a {
@@ -582,6 +642,11 @@ footer .family_w .all_fam ul li a {
 .business_w .tit h2 {
   font-size: 3em;
   margin: 0.15em 0 0 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .business_w .txt {
@@ -592,6 +657,11 @@ footer .family_w .all_fam ul li a {
 .business_w .txt p {
   line-height: 1.7;
   margin: 1em 0 2em 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .business_w .txt a {
@@ -676,6 +746,11 @@ footer .family_w .all_fam ul li a {
   font-weight: 700;
   font-size: 3.3em;
   text-align: center;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .esg_v .scr {
@@ -733,12 +808,22 @@ footer .family_w .all_fam ul li a {
 .esg .tit h2 {
   font-size: 2em;
   color: #443227;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .esg .txt p {
   font-size: 1em;
   line-height: 1.75;
   margin-top: 1.5em;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .esg .txt p img {
@@ -748,6 +833,11 @@ footer .family_w .all_fam ul li a {
 .esg .txt h3 {
   font-size: 1.5em;
   color: #3c9965;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .esg .txt ul {
@@ -758,6 +848,11 @@ footer .family_w .all_fam ul li a {
   font-size: 1em;
   padding: 0 0 1em 2em;
   position: relative;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .esg .txt ul li::before {
