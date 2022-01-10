@@ -10,7 +10,7 @@
     }
     .scr {
         position: absolute; width: 1.5em; left: 50%; bottom: 3.5vh; transform: translateX(-50%);
-        span {
+        span { 
             position: absolute; width: 1.5em; height: 2.5em; border-radius: 0.75em; border: 1px solid #fff;
             &::before {content: ''; display: block; background: #fff; width: .5em; height: .5em; border-radius: 50%; left: calc(50% - 0.25em); top: 5px;
             animation: move 1s infinite linear; position: absolute;} 
