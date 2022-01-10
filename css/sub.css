@@ -469,11 +469,12 @@ footer .family_w .all_fam ul li a {
   border-radius: 50%;
   background: #fff;
   line-height: 15em;
+  margin: 0 auto;
 }
 
 .vision .box .icon1 {
   width: 15em;
-  margin-top: 1.5em;
+  margin: 1.5em auto 0 auto;
 }
 
 .vision .box .icon1 img {
