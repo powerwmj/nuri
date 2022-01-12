@@ -894,6 +894,10 @@ footer .family_w .all_fam ul li a {
   padding: 2em;
   background: #fff;
   margin-top: 2em;
+  height: 40vh;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .ethics .content-box h4 {
