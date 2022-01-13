@@ -671,6 +671,11 @@ footer .family_w .all_fam ul li a {
   border: 1px solid #fff;
   font-weight: 700;
   margin-right: 1em;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .business_01 {

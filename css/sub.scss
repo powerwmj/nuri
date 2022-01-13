@@ -94,7 +94,7 @@
     .txt {
         color: #fff; font-size: 0.85em; 
         p {line-height: 1.7; margin: 1em 0 2em 0; transform: translateY(100%); opacity: 0; transition: .5s;}
-        a {display: inline-block; color: #fff; padding: 0.625em 1em; border: 1px solid #fff; font-weight: 700; margin-right: 1em;}
+        a {display: inline-block; color: #fff; padding: 0.625em 1em; border: 1px solid #fff; font-weight: 700; margin-right: 1em; transform: translateY(100%); opacity: 0; transition: .5s;}
     }
 }
 .business_01 {background: url('../img/business01-bg.jpg') center; background-size: cover;}

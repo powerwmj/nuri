@@ -6,7 +6,7 @@ let pos = {y: 0, dy:0, state: true} // true : 스크롤 내릴때, false : 스�
         pos.dy = pos.y;
             if(pos.state){
                 if(window.innerHeight > window.scrollY) {
-                    num -= 0.011
+                    num -= 0.11
                     if(window.innerHeight == window.scrollY){
                         num = 0
                     }
@@ -24,7 +24,7 @@ let pos = {y: 0, dy:0, state: true} // true : 스크롤 내릴때, false : 스�
                     }
                 })
 
-                $('p, h4, li').each(function(i){
+                $('p, h4, li, a').each(function(i){
                     if($(this).offset().top - (window.innerHeight*0.7) < window.scrollY){
                         $(this).css({'transform': 'translateY(0)', 'opacity': '1'});
                     }
