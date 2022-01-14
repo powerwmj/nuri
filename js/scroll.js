@@ -6,7 +6,7 @@ let pos = {y: 0, dy:0, state: true} // true : 스크롤 내릴때, false : 스�
         pos.dy = pos.y;
             if(pos.state){
                 if(window.innerHeight > window.scrollY) {
-                    num -= 0.11
+                    num -= 0.011
                     if(window.innerHeight == window.scrollY){
                         num = 0
                     }
