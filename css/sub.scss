@@ -6,6 +6,7 @@
         h2.active {opacity: 1; transform: translateY(0%);}
     }
 }
+
 .about_v {
     position: relative; width: 100%; height: 100vh; 
     &::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../img/subBG-about3.jpg') center; background-size: cover; display: block; z-index: -1;}
@@ -89,7 +90,9 @@
     .tit {
         color: #fff; margin-top: 1em;
         p {font-size: 0.75em; letter-spacing: 10;}
-        h2 {font-size: 3em; margin: 0.15em 0 0 0; transform: translateY(-100%); opacity: 0; transition: .5s;}
+        h2 {font-size: 3em; margin: 0.15em 0 0 0;}
+        span {opacity: 0; transform: translateX(-100%); transition: 1s;}
+
     }
     .txt {
         color: #fff; font-size: 0.85em; 

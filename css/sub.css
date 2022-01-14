@@ -315,6 +315,14 @@ footer .family_w .all_fam ul li a {
           transform: translateY(0%);
 }
 
+h2.mov span {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .about_v {
   position: relative;
   width: 100%;
@@ -642,11 +650,6 @@ footer .family_w .all_fam ul li a {
 .business_w .tit h2 {
   font-size: 3em;
   margin: 0.15em 0 0 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  opacity: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .business_w .txt {
